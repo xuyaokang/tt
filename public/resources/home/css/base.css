@@ -1,0 +1,102 @@
+/*----------------------------------------------RESET CSS----------------------------------------------*/
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body, button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+    color: #463e3e;
+}
+
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+q:before, q:after { content: ''; }
+
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+    outline: none;
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+
+/* 背景颜色 */
+body { background: #f2fef7;}
+
+a { text-decoration: none; color: #1c1d1d; }
+
+
+/*----------------------------------------------公用样式----------------------------------------------*/
+.clear { clear: both; }
+
+.header { width: 1006px; height: 130px; margin: 0 auto; position: relative; }
+.logo { width: 230px; height: 80px; position: absolute; top: 25px; left: 5px;}
+.collect { position: absolute; top: 15px; right: 0; }
+.collect li { padding: 0 15px; border-right: solid 1px #1d1b1b; float: left; line-height: 1.2; }
+.collect .last { border: none; }
+.phone { width: 290px; height: 30px; background: url("../img/phone.jpg") no-repeat; position: absolute; top: 60px; right: 10px; }
+.navBox { width: 100%; height: 40px; background: #079841; }
+.nav { width: 1006px; margin: 0 auto; }
+.nav ul li { width: 130px; height: 40px; background: url("../img/nav_line.gif") no-repeat right center; float: left; }
+.nav ul li a { width: 95px; height: 28px; margin: 5px auto; padding: 3px 0 0 0; display: block; font: normal 14px '微软雅黑'; color: #fff; text-align: center; }
+.nav ul li a:hover, .nav ul li .current { background: url("../img/nav_current.gif") no-repeat; }
+.search { width: 292px; height: 25px; margin: 8px 0 0 57px; background: url("../img/searchBg.gif") no-repeat; float: left; display: inline; position: relative; }
+.search .word { width: 230px; height: 15px; padding: 5px; border: none; background: none;}
+.search button { width: 48px; height: 25px; border: none; background: none; position: absolute; top: 0; right: 0; color: #fff; cursor: pointer; line-height: 25px; text-align: center; }
+#index_banner, #banner { position: relative; }
+
+.content { width: 1006px; margin: 0 auto; }
+
+.footer { width: 100%; height: 35px; margin: 60px 0 0 0; padding: 25px 0 0 0; background: #079841; text-align: center; }
+.footer p, .footer p a { color: #fff; }
+.footer p a:hover { color: #ccc; }
+
+.top { height: 30px; width: 100%; background: url("../img/boxTop.gif") repeat-x; position: relative; }
+.top span { position: absolute; left: 10px; top: 7px; font: normal 14px "黑体"; color: #fff;}
+.top span b { font-size: 12px; font-weight: normal; }
+
+.box { width: 964px; margin: 15px 0 0 0; padding: 20px 20px 70px 20px; background: #fff; border: solid 1px #ccc; position: relative; float: left; }
+.box h1 { margin: 0 0 20px 0; padding: 5px 0; border-bottom: solid 2px #eaeaea; font: normal 18px "黑体"; color: #1c1d1d; }
+.box h2 { margin: 17px 0 12px 0; font: bold 18px "宋体"; color: #1c1d1d; }
+.box h3 { margin: 15px 0 15px 0; font: bold 14px "宋体"; text-indent: 2em; }
+.box h3 span { font: normal 12px "宋体"; }
+.box p { margin: 5px 10px; text-indent: 2em; line-height: 2em; color: #5b5e5f; }

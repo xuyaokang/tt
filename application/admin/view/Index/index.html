@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>登录</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="resources/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/resources/images/login.js"></script>
+<link rel="stylesheet" href="/resources/css/login2.css" />
+</head>
+<body>
+
+	<div class="login" style="margin-top:50px;">
+    
+		<div class="header">
+			<div class="switch" id="switch"><a class="switch_btn_focus" id="switch_qlogin" href="javascript:void(0);" tabindex="7">快速登录</a>
+				<a class="switch_btn" id="switch_login" href="javascript:void(0);" tabindex="8">快速注册</a><div class="switch_bottom" id="switch_bottom" style="position: absolute; width: 64px; left: 0px;"></div>
+			</div>
+		</div>
+		<div class="web_qr_login" id="web_qr_login" style="display: block; height: 235px;">
+			<div class="web_login" id="web_login">
+				<div class="login-box">
+					<div class="login_form">
+					<form action="index.php?c=login&a=login&admin=1" name="loginform" accept-charset="utf-8" id="login_form" class="loginForm" method="post" onsubmit="return check()" >
+						<input type="hidden" name="did" value="0"/>
+						<input type="hidden" name="to" value="log"/>
+						<div class="uinArea" id="uinArea">
+							<label class="input-tips" for="u">帐号：</label>
+							<div class="inputOuter" id="uArea">
+								
+								<input type="text" id="u" name="username" value="" class="inputstyle" />
+							</div>
+						</div>
+						<div class="pwdArea" id="pwdArea">
+							<label class="input-tips" for="p">密码：</label> 
+							<div class="inputOuter" id="pArea">
+								<input type="password" id="p" name="password" value="" class="inputstyle" />
+							</div>
+						</div>
+							<div style="padding-left:50px;margin-top:20px;">
+								<input type="submit" value="登 录" style="width:150px;" class="button_blue"/>
+							</div>
+					  </form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="qlogin" id="qlogin" style="display: none; ">
+	   
+			<div class="web_login">
+				<form action="zhuce.php" method="post">
+					
+					<ul class="reg_form" id="reg-ul">
+						<li>
+							<label for="user"  class="input-tips2">用户名：</label>
+						
+								<input type="text" id="user" name="username" class="inputstyle2"/>
+
+						</li>
+						<li>
+						<label for="passwd" class="input-tips2">密码：</label>
+								<input type="password" id="passwd"  name="password" maxlength="16" class="inputstyle2" />
+						
+						</li>
+						<li>
+						<label for="passwd2" class="input-tips2">确认密码：</label>
+						
+								<input type="password" id="password1" name="password1" maxlength="16" class="inputstyle2" />
+							
+						</li>
+						<li>
+								<input type="submit" id="reg"  style="margin-top:10px;margin-left:85px;" class="button_blue" onClick="javascript:return del();" value="同意协议并注册"/>
+							
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+		function check()
+	{
+	//var a = $("#u").val();
+		
+		//alert(a);
+		
+		var reg = /^\w{6,15}$/;
+		if(!reg.test($("#u").val()))   //$("#username").val()  获取文本框的值
+		{
+			alert("你输入的用户名内容不符合");
+			return false;
+		}
+		
+		var regs = /^\w{6,20}$/;
+		if(!regs.test($("#p").val()))   //$("#password").val()  获取文本框的值
+		{
+			alert("你输入的密码内容不符合");
+			return false;
+		}
+	
+	}
+		
+	</script>
+</html>

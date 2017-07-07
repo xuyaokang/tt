@@ -1,0 +1,91 @@
+/*----------------------------------------------首页----------------------------------------------*/
+.index_pro { width: 990px; height: 145px; padding: 15px 0 0 16px; background: #fff; float: left; }
+.index_pro .link_prev, .index_pro .link_next { width: 12px; height: 30px; margin: 43px 0 0 0; position: relative; z-index: 2; float:left; display: block; cursor: pointer; text-indent: -9999em; }
+.index_pro .link_prev { background: url("../img/icon_pre.gif") no-repeat; }
+.index_pro .link_next { background: url("../img/icon_next.gif") no-repeat; }
+.index_pro .link_prev:hover, .index_pro .link_next:hover { opacity:0.8; filter: alpha(opacity=80); }
+.index_pro .links { width:910px; height:144px; margin:0 20px; float:left; overflow:hidden; position:relative; }
+.index_pro .links ul { width:2000px; height:144px; overflow:hidden; }
+.index_pro .links ul li { width:170px; margin:0 15px 0 0; float:left; display:inline; text-align: center; }
+.index_pro .links ul li p { margin: 8px 0 0 0; color: #5b5e5f; }
+.index_pro .links ul li img { width:170px; height:114px; display:block; overflow:hidden; }
+.index_pro .links a:hover img { opacity: 0.8; filter:alpha(opacity=80); }
+.index_pro .links a:hover p { color: #079871; }
+.index_pro .links .slide{ position: relative; }
+
+.index_about { width: 280px; height: 270px; margin: 8px 0 0 0; position: relative; background: #fff; float: left; }
+.index_about img { margin: 8px 8px 3px 8px; }
+.index_about p { padding: 0 16px; line-height: 1.5em; text-indent: 2em; }
+.index_about a { padding: 6px; background: #69c500; position: absolute; left: 110px; bottom: 15px; color: #fff; }
+.index_about a:hover{ color: #079871; }
+
+.index_news { width: 495px; height: 270px; margin: 8px 0 0 12px; background: #fff; float: left; }
+.index_news .list { margin: 5px 0 0 40px; }
+.index_news .list li { width: 425px; height: 75px; border-bottom: solid 1px #ccc; position: relative; }
+.index_news .list li .time { width: 50px; height: 45px; background: url("../img/icon_news.gif") no-repeat center bottom; position: absolute; left: 0; top: 15px; text-align: center; }
+.index_news .list li .time span { font: normal 18px "Arial"; color: #47a94e; }
+.index_news .list li h3 { position: absolute; left: 90px; top: 20px; line-height: 1.2; }
+.index_news .list li h3 a { font-size: 14px; color: #1a1818; }
+.index_news .list li h3 a:hover { color: #079871; }
+.index_news .list li p { position: absolute; left: 90px; top: 43px; }
+.index_news .list .last { border: none;}
+
+.index_contact { width: 208px; height: 270px; margin: 8px 0 0 11px; background: #fff; float: left; }
+.index_contact ul { margin: 10px 0 0 20px; }
+.index_contact ul li { width: 125px; height: 20px; margin: 3px 0 0 0; padding: 0 0 0 35px; background: url("../img/icon_contact.gif") no-repeat; line-height: 20px; }
+.index_contact ul .tell { background-position: 0 0; }
+.index_contact ul .call { background-position: 0 -20px; }
+.index_contact ul .fax { background-position: 0 -40px; }
+.index_contact ul .adress { background-position: 0 -60px; }
+
+/*----------------------------------------------公司简介----------------------------------------------*/
+.about img { margin: 0 30px 30px 0; float: left; }
+
+/*----------------------------------------------工厂简介----------------------------------------------*/
+.factory { overflow: hidden; }
+.factory h1 { text-align: center; }
+.factory img { margin: 0 15px 30px 15px; float: left; }
+.factory ul { margin: 90px 0 0 0; }
+.factory ul li { width: 452px; height: 180px; margin: 0 15px; display:inline; float: left; }
+
+/*----------------------------------------------产品简介----------------------------------------------*/
+.product img { margin: 15px; float: left; }
+.product .productImg3 { margin: 30px 100px; float: none; }
+
+/*----------------------------------------------联系我们----------------------------------------------*/
+.contact { height: 210px; margin: 0; }
+.contact .contactImg { width: 225px; height: 110px; background: url("../img/contactImg.jpg") no-repeat; position: absolute; left: 70px; top: 50px; }
+
+.contact .text { position: absolute; left: 310px; top: 40px; }
+.contact .text ul li { margin-bottom: 7px; }
+.contact .text ul li input { width: 320px; height: 15px; padding: 5px 15px; background: #fff; border: solid 1px #ccc; color: #878787; }
+.contact .text ul li textarea { width: 320px; height: 85px; padding: 5px 15px; background: #fff; border: solid 1px #ccc; color: #878787; }
+.contact .text ul li .sub { width: 65px; height: 25px; padding: 3px 15px; background: #5ec228; border: none; font: normal 15px "微软雅黑"; color: #fff; cursor: pointer; }
+
+.contact .title { position: absolute; left: 700px; top: 40px; font: normal 18px "微软雅黑"; color: #767575; }
+
+.contact .info { width: 190px; position: absolute; left: 700px; top: 90px; }
+.contact .info li { line-height: 30px; color: #6c6c6c; }
+/*----------------------------------------------最新公告----------------------------------------------*/
+.news { width: 934px; padding: 0 35px 10px 35px; margin: 0; }
+.news .pageTop { position: absolute; right: 30px; top: 10px; z-index: 2; }
+.news .pageTop li { margin: 0 1px; padding: 6px 2px; float: left; color: #5d5e60; }
+.news .pageTop li a { color: #5d5e60; }
+.news .pageTop .current { background: #d0d1d1; }
+
+.news .list li { width: 100%; height: 240px; border-bottom: solid 2px #eaeaea; position: relative; }
+.news .list li img { width: 230px; height: 150px; position: absolute; left: 0; top: 50px; }
+.news .list li h2 { margin: 0; position: absolute; left: 270px; top: 50px; }
+.news .list li h2 a:hover { color: #079871; }
+.news .list li span { position: absolute; left: 800px; top: 53px; color: #828282; }
+.news .list li p { width: 600px; margin: 0; position: absolute; left: 270px; top: 83px; color: #1c1d1d; }
+.news .list .last { border: none; }
+
+.news .page { margin: 0 0 0 330px; }
+.news .page li { margin: 0 0 0 3px; float: left; text-align: center; line-height: 30px; }
+.news .page li a { width: 15px; height: 28px; display: block; text-align: center; line-height: 30px; color: #5d5e60; }
+.news .page li .current { background: #d0d1d1; }
+.news .page .pre a, .news .page .next a { width: 28px; background: #c3e899; color: #69c500; font-size: 18px; }
+.news .page .go { width: 68px; height: 26px; border: solid 1px #ccc; }
+.news .page .go input { width: 25px; height: 18px; margin: 4px 0 0 0; padding: 0 5px; background: none; border: none; border-right: solid 2px #ccc; float: left; _line-height: 25px;}
+.news .page .go button { width: 30px; border: none; background: none; cursor: pointer; float: left; line-height: 25px; }
